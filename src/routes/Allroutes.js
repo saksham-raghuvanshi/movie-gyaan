@@ -10,7 +10,13 @@ const Allroutes = () => {
   return (
     <>
       <Routes>
-        <Route />
+        <Route path="/" element={<MovieList />} />
+        <Route path="/movie/:id" element={<MovieDetail />} />
+        <Route path="/movie/popular" element={<MovieList />} />
+        <Route path="/movie/top" element={<MovieList />} />
+        <Route path="/movie/upcoming" element={<MovieList />} />
+        <Route path="search" element={<Search />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </>
   );
