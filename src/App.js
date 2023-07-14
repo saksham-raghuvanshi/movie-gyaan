@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import "./index.css";
 
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <Header />
       <Allroutes />
+      <Footer />
     </div>
   );
 }
